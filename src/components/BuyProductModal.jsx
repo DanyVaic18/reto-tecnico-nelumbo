@@ -1,5 +1,6 @@
 import { Button, Divider, Typography } from "antd";
 import bannerModalProduct from "../assets/productos/banner-modal-products.jpg";
+import { Link } from "react-router-dom";
 const { Title, Text } = Typography;
 
 const BuyProductModal = (product) => {
@@ -20,9 +21,12 @@ const BuyProductModal = (product) => {
           <Text className="text-blue-700 text-sm font-medium text-end">
             $ {product.product.price} x 1
           </Text>
-          <Title level={5} className="m-0">
+          <Link
+            to={`/products/${product.product.id}`}
+            className="m-0 text-lg font-semibold"
+          >
             {product.product.name}
-          </Title>
+          </Link>
 
           <Text className="text-gray-400 text-sm font-medium ">
             <span>Color Seleccionado:</span>{" "}
@@ -46,12 +50,14 @@ const BuyProductModal = (product) => {
         <Title level={4} className="m-0">
           $ 70 p/semana!
         </Title>
-        <Button
-          size="large"
-          className="bg-yellow-400 text-blue-700 border-0 hover:bg-yellow-500 transition"
-        >
-          COMPRAR A CRÉDITO
-        </Button>
+        <Link to={`/products/${product.product.id}`}>
+          <Button
+            size="large"
+            className="bg-yellow-400 text-blue-700 border-0 hover:bg-yellow-500 transition"
+          >
+            COMPRAR A CRÉDITO
+          </Button>
+        </Link>
         <Divider className="text-sm text-gray-400 italic">o puedes</Divider>
         <Text className="text-blue-700 text-sm font-medium text-end">
           Comprar a contado

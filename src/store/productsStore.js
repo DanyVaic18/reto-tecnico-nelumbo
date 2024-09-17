@@ -17,28 +17,9 @@ import aceraspire5 from "../assets/productos/laptops/acer-aspire-5.webp"
 
 
 
-export const useProductStore = create((set) => ({
-  product: {
-    id: 1,
-    name: "",
-    category: "",
-    mark: "",
-    price: "",
-    image: "",
-    discount: "",
-    reviews: "",
-    detailedInformation: {
-      manufacturer: "",
-      productWeight: "",
-      dimensions: "",
-      countryOrigin: "",
-      color: "",
-      material: "",
-      characteristics: "",
-    },
-  },
-  setProduct: (product) => set({ product }),
-  listProduct: [
+export const useProductStore = create(() => ({
+
+  listProducts: [
     {
       id: 1,
       name: "Samsung Galaxy S21",
@@ -47,7 +28,7 @@ export const useProductStore = create((set) => ({
       price: "800.00",
       image: samsungGalaxys21,
       discount: "10%",
-      reviews: 4.5,
+      reviews: 5,
       detailedInformation: {
         manufacturer: "Samsung Electronics",
         productWeight: "169g",
@@ -159,7 +140,7 @@ export const useProductStore = create((set) => ({
       mark: "Apple",
       price: "999.00",
       image: iphone13pro,
-      reviews: 4.8,
+      reviews: 5,
       detailedInformation: {
         manufacturer: "Apple",
         productWeight: "204g",
@@ -178,7 +159,7 @@ export const useProductStore = create((set) => ({
       price: "1500.00",
       image: lenovoThinkpadX1Carbon,
       discount: "10%",
-      reviews: 4.8,
+      reviews: 4,
       detailedInformation: {
         manufacturer: "Lenovo",
         productWeight: "1.13kg",
@@ -197,7 +178,7 @@ export const useProductStore = create((set) => ({
       mark: "Lenovo",
       price: "750.00",
       image: lenovoIdeapad5,
-      reviews: 4.5,
+      reviews: 5,
       detailedInformation: {
         manufacturer: "Lenovo",
         productWeight: "1.66kg",
@@ -217,7 +198,7 @@ export const useProductStore = create((set) => ({
       price: "1200.00",
       image: lenovoLegion5,
       discount: "12%",
-      reviews: 4.7,
+      reviews: 5,
       detailedInformation: {
         manufacturer: "Lenovo",
         productWeight: "2.3kg",
@@ -236,7 +217,7 @@ export const useProductStore = create((set) => ({
       mark: "Lenovo",
       price: "1000.00",
       image: lenovoyogaslim7,
-      reviews: 4.6,
+      reviews: 4,
       detailedInformation: {
         manufacturer: "Lenovo",
         productWeight: "1.4kg",
@@ -256,7 +237,7 @@ export const useProductStore = create((set) => ({
       price: "850.00",
       image: lenovothinkbook14,
       discount: "7%",
-      reviews: 4.4,
+      reviews: 4,
       detailedInformation: {
         manufacturer: "Lenovo",
         productWeight: "1.5kg",
@@ -276,7 +257,7 @@ export const useProductStore = create((set) => ({
       price: "950.00",
       image: asusZenbook14,
       discount: "10%",
-      reviews: 4.7,
+      reviews: 3.9,
       detailedInformation: {
         manufacturer: "ASUS",
         productWeight: "1.17kg",
@@ -295,7 +276,7 @@ export const useProductStore = create((set) => ({
       mark: "Acer",
       price: "600.00",
       image: aceraspire5,
-      reviews: 4.5,
+      reviews: 5,
       detailedInformation: {
         manufacturer: "Acer",
         productWeight: "1.8kg",

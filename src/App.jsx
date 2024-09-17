@@ -5,6 +5,7 @@ import Navbar from "./layout/Navbar";
 import Footer from "./layout/Footer";
 import Home from "./pages/Home";
 import Menu from "./layout/Menu";
+import ProductDetails from "./pages/ProductDetails";
 function App() {
   return (
     <BrowserRouter basename="/reto-tecnico-nelumbo">
@@ -12,6 +13,7 @@ function App() {
       <Menu />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/products/:id" element={<ProductDetails />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
       <Footer />

@@ -6,7 +6,7 @@ import CarouselHome from "../components/CarouselHome";
 const { Title, Text } = Typography;
 
 const Home = () => {
-  const listProducts = useProductStore((state) => state.listProduct);
+  const listProducts = useProductStore((state) => state.listProducts);
 
   return (
     <main className="px-[1.5%] md:px-[4%] flex w-full bg-gray-100 flex-wrap">
