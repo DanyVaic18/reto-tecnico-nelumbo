@@ -30,7 +30,7 @@ export const useProductStore = create((set) => ({
       price: "800.00",
       image: "../assets/productos/smartphone/samsung-galaxy-s21.png",
       discount: "10%",
-      reviews: "4.5",
+      reviews: 4.5,
       detailedInformation: {
         manufacturer: "Samsung Electronics",
         productWeight: "169g",
@@ -49,7 +49,7 @@ export const useProductStore = create((set) => ({
       price: "1200.00",
       image: "../assets/productos/smartphone/samsung-note-20-ultra.jpg",
       discount: "15%",
-      reviews: "4.8",
+      reviews: 4.8,
       detailedInformation: {
         manufacturer: "Samsung Electronics",
         productWeight: "208g",
@@ -68,7 +68,7 @@ export const useProductStore = create((set) => ({
       price: "350.00",
       image: "../assets/productos/smartphone/samsung-galaxy-a52.jpg",
       discount: "5%",
-      reviews: "4.3",
+      reviews: 4.3,
       detailedInformation: {
         manufacturer: "Samsung Electronics",
         productWeight: "189g",
@@ -87,7 +87,7 @@ export const useProductStore = create((set) => ({
       price: "1799.00",
       image: "../assets/productos/smartphone/samsung-galaxy-z-fold-3.jpg",
       discount: "12%",
-      reviews: "4.7",
+      reviews: 4.7,
       detailedInformation: {
         manufacturer: "Samsung Electronics",
         productWeight: "271g",
@@ -106,7 +106,7 @@ export const useProductStore = create((set) => ({
       price: "600.00",
       image: "../assets/productos/smartphone/samsung-galaxy-s20-fe.jpg",
       discount: "8%",
-      reviews: "4.4",
+      reviews: 4.4,
       detailedInformation: {
         manufacturer: "Samsung Electronics",
         productWeight: "190g",
@@ -126,7 +126,7 @@ export const useProductStore = create((set) => ({
       price: "700.00",
       image: "../assets/productos/smartphone/xiaomi-mi-11.jpg",
       discount: "10%",
-      reviews: "4.6",
+      reviews: 4.6,
       detailedInformation: {
         manufacturer: "Xiaomi",
         productWeight: "196g",
@@ -145,7 +145,7 @@ export const useProductStore = create((set) => ({
       price: "999.00",
       image: "../assets/productos/smartphone/iphone-13-pro.webp",
       discount: "5%",
-      reviews: "4.8",
+      reviews: 4.8,
       detailedInformation: {
         manufacturer: "Apple",
         productWeight: "204g",
@@ -164,7 +164,7 @@ export const useProductStore = create((set) => ({
       price: "1500.00",
       image: "../assets/productos/laptops/lenovo-thinkpad-x1-carbon.png",
       discount: "10%",
-      reviews: "4.8",
+      reviews: 4.8,
       detailedInformation: {
         manufacturer: "Lenovo",
         productWeight: "1.13kg",
@@ -184,7 +184,7 @@ export const useProductStore = create((set) => ({
       price: "750.00",
       image: "../assets/productos/laptops/lenovo-ideapad-5.webp",
       discount: "5%",
-      reviews: "4.5",
+      reviews: 4.5,
       detailedInformation: {
         manufacturer: "Lenovo",
         productWeight: "1.66kg",
@@ -204,7 +204,7 @@ export const useProductStore = create((set) => ({
       price: "1200.00",
       image: "../assets/productos/laptops/lenovo-legion-5.png",
       discount: "12%",
-      reviews: "4.7",
+      reviews: 4.7,
       detailedInformation: {
         manufacturer: "Lenovo",
         productWeight: "2.3kg",
@@ -224,7 +224,7 @@ export const useProductStore = create((set) => ({
       price: "1000.00",
       image: "../assets/productos/laptops/lenovo-yoga-slim-7.webp",
       discount: "8%",
-      reviews: "4.6",
+      reviews: 4.6,
       detailedInformation: {
         manufacturer: "Lenovo",
         productWeight: "1.4kg",
@@ -244,7 +244,7 @@ export const useProductStore = create((set) => ({
       price: "850.00",
       image: "../assets/productos/laptops/lenovo-thinkbook-14.png",
       discount: "7%",
-      reviews: "4.4",
+      reviews: 4.4,
       detailedInformation: {
         manufacturer: "Lenovo",
         productWeight: "1.5kg",
@@ -264,7 +264,7 @@ export const useProductStore = create((set) => ({
       price: "950.00",
       image: "../assets/productos/laptops/asus-zenbook-14.png",
       discount: "10%",
-      reviews: "4.7",
+      reviews: 4.7,
       detailedInformation: {
         manufacturer: "ASUS",
         productWeight: "1.17kg",
@@ -284,7 +284,7 @@ export const useProductStore = create((set) => ({
       price: "600.00",
       image: "../assets/productos/laptops/acer-aspire-5.webp",
       discount: "8%",
-      reviews: "4.5",
+      reviews: 4.5,
       detailedInformation: {
         manufacturer: "Acer",
         productWeight: "1.8kg",
@@ -297,7 +297,5 @@ export const useProductStore = create((set) => ({
       },
     },
   ],
-
-  removeAllBears: () => set({ bears: 0 }),
-  updateBears: (newBears) => set({ bears: newBears }),
+  
 }));
