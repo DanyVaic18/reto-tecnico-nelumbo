@@ -1,9 +1,23 @@
-import { Button, Rate, Typography } from "antd";
+import { Button, Modal, Rate, Typography } from "antd";
+import { useState } from "react";
 import { BsHeart } from "react-icons/bs";
+import bannerModalProduct from "../assets/productos/banner-modal-products.jpg";
 
 const { Title, Text } = Typography;
 
 const CardProduct = (product) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className="flex flex-col shadow-lg rounded-2xl border w-[90%]">
       <div className="p-4 w-full px-8 relative">
@@ -35,11 +49,35 @@ const CardProduct = (product) => {
           <Button
             size="large"
             className="bg-yellow-400 text-blue-700 border-0 hover:bg-yellow-500 transition font-semibold"
+            onClick={showModal}
           >
             Lo Quiero!
           </Button>
         </div>
       </div>
+      <Modal
+        open={isModalOpen}
+        onOk={handleOk}
+        onCancel={handleCancel}
+        width={1000}
+        footer={null}
+      >
+        <div className="flex flex-col items-center justify-center gap-3">
+          <img
+            src={bannerModalProduct}
+            alt={"banner"}
+            className="w-[70%] rounded-md object-contain"
+          />
+          <div className="flex gap-2 w-[70%]">
+            <img
+              src={product.image}
+              alt={product.name}
+              className=" max-h-[180px] rounded-md object-contain shadow-lg"
+            />
+            <div className="w-[60%] "></div>
+          </div>
+        </div>
+      </Modal>
     </div>
   );
 };
