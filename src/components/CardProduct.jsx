@@ -1,7 +1,7 @@
 import { Button, Modal, Rate, Typography } from "antd";
 import { useState } from "react";
 import { BsHeart } from "react-icons/bs";
-import bannerModalProduct from "../assets/productos/banner-modal-products.jpg";
+import BuyProductModal from "./BuyProductModal";
 
 const { Title, Text } = Typography;
 
@@ -19,18 +19,25 @@ const CardProduct = (product) => {
   };
 
   return (
-    <div className="flex flex-col shadow-lg rounded-2xl border w-[90%]">
+    <div className="flex flex-col shadow-lg rounded-2xl border w-[95%]">
       <div className="p-4 w-full px-8 relative">
         <BsHeart className="absolute text-3xl right-4 text-gray-500"></BsHeart>
         <img
           src={product.image}
           alt={product.name}
-          className="h-[420px] w-full rounded-md object-contain"
+          className="h-[320px] w-full rounded-md object-contain"
         />
+        {product.discount && (
+          <div className="rounded-full text-white font-bold h-20 w-20 flex items-center justify-center absolute bottom-3 left-3 bg-red-500 text-4xl">
+            {product.discount}
+          </div>
+        )}
       </div>
       <div className="grid grid-cols-2 gap-1 p-4">
-        <div className="flex flex-col gap-2 p-4">
-          <p className="font-semibold">{product.name}</p>
+        <div className="flex flex-col gap-2 ">
+          <p className="font-semibold truncate" title={product.name}>
+            {product.name}
+          </p>
           <Rate defaultValue={product.reviews} allowClear={false} />
           <Text className="text-base font-medium text-balance w-[70%] text-gray-500 truncates">
             {" "}
@@ -44,7 +51,7 @@ const CardProduct = (product) => {
           </Title>
           <Title level={5} className="text-gray-400 line-through m-0">
             {" "}
-            ${product.price - 200}
+            ${Number(product.price) + 300}
           </Title>
           <Button
             size="large"
@@ -59,24 +66,10 @@ const CardProduct = (product) => {
         open={isModalOpen}
         onOk={handleOk}
         onCancel={handleCancel}
-        width={1000}
+        width={500}
         footer={null}
       >
-        <div className="flex flex-col items-center justify-center gap-3">
-          <img
-            src={bannerModalProduct}
-            alt={"banner"}
-            className="w-[70%] rounded-md object-contain"
-          />
-          <div className="flex gap-2 w-[70%]">
-            <img
-              src={product.image}
-              alt={product.name}
-              className=" max-h-[180px] rounded-md object-contain shadow-lg"
-            />
-            <div className="w-[60%] "></div>
-          </div>
-        </div>
+      <BuyProductModal product={product}/>
       </Modal>
     </div>
   );

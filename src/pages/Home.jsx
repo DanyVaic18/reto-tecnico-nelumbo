@@ -9,7 +9,7 @@ const Home = () => {
 
   return (
     <main className="px-[1.5%] md:px-[4%] flex w-full bg-gray-100 flex-wrap">
-      <section className="w-[30%] lg:w-[20%] p-3 flex flex-col gap-3">
+      <section className="w-[35%] lg:w-[25%] p-3 flex flex-col gap-3">
         <div className="bg-white  w-full shadow-md flex flex-col p-2">
           <div className="p-3 flex flex-col gap-3 border-b border-gray-300">
             <Title level={5} className="text-blue-800">
@@ -66,7 +66,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="w-[70%] lg:w-[80%] grid lg:grid-cols-2 xl:grid-cols-3 gap-6 place-items-center py-6">
+      <section className="w-[70%] lg:w-[75%] grid lg:grid-cols-2 xl:grid-cols-3 gap-6 place-items-center py-6">
         {listProducts.map((product) => {
           return <CardProduct {...product} key={product.id} />;
         })}

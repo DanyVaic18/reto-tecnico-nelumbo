@@ -21,9 +21,9 @@ const Navbar = () => {
     <header className="min-h-20 px-[4%] py-2 bg-blue-700 flex items-center">
       <nav className="flex items-center gap-3 lg:justify-between w-full sm:pr-[14%] lg:pr-[8%]">
         <Link to={"/"}>
-         <LogoMacroPay />
+          <LogoMacroPay />
         </Link>
-        <div className="flex gap-2 items-center">
+        <div className="flex gap-2 items-center sm:pr-[8%] 2xl:pr-0">
           <Button
             size="large"
             className="bg-yellow-400 text-blue-700 border-0 hover:bg-yellow-500 transition"

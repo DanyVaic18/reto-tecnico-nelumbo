@@ -103,7 +103,6 @@ export const useProductStore = create((set) => ({
       mark: "Samsung",
       price: "1799.00",
       image: samsungGalaxyzfold3,
-      discount: "12%",
       reviews: 4.7,
       detailedInformation: {
         manufacturer: "Samsung Electronics",
@@ -142,7 +141,6 @@ export const useProductStore = create((set) => ({
       mark: "Xiaomi",
       price: "700.00",
       image: xiaomiMi11,
-      discount: "10%",
       reviews: 4.6,
       detailedInformation: {
         manufacturer: "Xiaomi",
@@ -161,7 +159,6 @@ export const useProductStore = create((set) => ({
       mark: "Apple",
       price: "999.00",
       image: iphone13pro,
-      discount: "5%",
       reviews: 4.8,
       detailedInformation: {
         manufacturer: "Apple",
@@ -200,7 +197,6 @@ export const useProductStore = create((set) => ({
       mark: "Lenovo",
       price: "750.00",
       image: lenovoIdeapad5,
-      discount: "5%",
       reviews: 4.5,
       detailedInformation: {
         manufacturer: "Lenovo",
@@ -240,7 +236,6 @@ export const useProductStore = create((set) => ({
       mark: "Lenovo",
       price: "1000.00",
       image: lenovoyogaslim7,
-      discount: "8%",
       reviews: 4.6,
       detailedInformation: {
         manufacturer: "Lenovo",
@@ -300,7 +295,6 @@ export const useProductStore = create((set) => ({
       mark: "Acer",
       price: "600.00",
       image: aceraspire5,
-      discount: "8%",
       reviews: 4.5,
       detailedInformation: {
         manufacturer: "Acer",
