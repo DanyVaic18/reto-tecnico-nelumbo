@@ -17,7 +17,7 @@ const Menu = () => {
         return (
           <li
             key={index}
-            className={`cursor-pointer flex flex-col gap-0.5 items-center transition-all hover:text-blue-800 hover:font-semibold ${
+            className={`cursor-pointer text-center flex flex-col gap-0.5 items-center transition-all hover:text-blue-800 hover:font-semibold ${
               menuSelect === label
                 ? "text-blue-800 font-semibold relative h-full"
                 : ""

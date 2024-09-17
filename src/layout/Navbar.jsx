@@ -26,7 +26,7 @@ const Navbar = () => {
         <div className="flex gap-2 items-center sm:pr-[8%] 2xl:pr-0">
           <Button
             size="large"
-            className="bg-yellow-400 text-blue-700 border-0 hover:bg-yellow-500 transition font-medium"
+            className="hidden sm:block bg-yellow-400 text-blue-700 border-0 hover:bg-yellow-500 transition font-medium"
           >
             Crea Tu Cuenta
           </Button>

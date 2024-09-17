@@ -112,8 +112,8 @@ const ProductDetails = () => {
   ) : (
     <section className="flex flex-col gap-4  w-full px-[4%] py-[2%]">
       <Breadcrumb items={breadCrumbItems} />
-      <article className="flex w-full">
-        <div className="w-full sm:w-[35%] flex gap-2">
+      <article className="flex w-full flex-col-reverse gap-5 sm:gap-0 sm:flex-row">
+        <div className="w-full sm:w-[45%] lg:w-[35%] flex gap-2">
           <div className="flex flex-col gap-3 p-2 min-w-28">
             {showImagesAccorddingCategory().map((product) => {
               return (
@@ -141,7 +141,7 @@ const ProductDetails = () => {
             )}
           </div>
         </div>
-        <div className="w-full sm:w-[65%] flex flex-col gap-4 p-4">
+        <div className="w-full sm:w-[55%] lg:w-[65%] flex flex-col gap-4 p-4">
           <div className="flex justify-between">
             <div className="flex flex-col gap-2">
               <Title level={2} className="m-0">
@@ -189,10 +189,10 @@ const ProductDetails = () => {
           </div>
         </div>
       </article>
-      <Title level={4} className="mx-auto my-6">
+      <Title level={4} className="mx-auto sm:my-6">
         Información Detallada del Producto:
       </Title>
-      <article className="w-full grid grid-cols-2 gap-10 place-items-center">
+      <article className="w-full grid sm:grid-cols-2 gap-2 sm:gap-10 place-items-center">
         <div className="grid grid-cols-2 gap-4 w-[70%]">
           {showImagesAccorddingCategory().map((product) => {
             return (
@@ -200,7 +200,7 @@ const ProductDetails = () => {
                 key={product.id}
                 src={product.image}
                 alt={product.name}
-                className="w-full h-full border rounded-md object-contain"
+                className="hidden sm:block sm:w-full sm:h-full border rounded-md object-contain"
               />
             );
           })}
