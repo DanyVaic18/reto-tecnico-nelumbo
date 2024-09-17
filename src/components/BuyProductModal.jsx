@@ -12,20 +12,21 @@ const BuyProductModal = (product) => {
       />
       <div className="flex gap-2 w-[90%]">
         <img
-          src={product.image}
-          alt={product.name}
+          src={product.product.image}
+          alt={product.product.name}
           className=" max-h-[120px] rounded-md object-contain shadow-lg"
         />
         <div className="flex-1 flex flex-col pt-4">
           <Text className="text-blue-700 text-sm font-medium text-end">
-            $ {product.price} x 1
+            $ {product.product.price} x 1
           </Text>
           <Title level={5} className="m-0">
-            {product.name}
+            {product.product.name}
           </Title>
 
           <Text className="text-gray-400 text-sm font-medium ">
-            <span>Color Seleccionado:</span> {product.detailedInformation.color}
+            <span>Color Seleccionado:</span>{" "}
+            {product.product.detailedInformation?.color}
           </Text>
         </div>
       </div>
@@ -34,7 +35,8 @@ const BuyProductModal = (product) => {
           1 ítem en tu carrito:
         </Text>
         <Text className="text-blue-700 text-sm font-medium text-end">
-          <span className="text-gray-400">Subtotal</span> $ {product.price}
+          <span className="text-gray-400">Subtotal</span> ${" "}
+          {product.product.price}
         </Text>
       </div>
       <div className="flex flex-col gap-2 justify-center items-center">
