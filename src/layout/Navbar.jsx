@@ -40,7 +40,7 @@ const Navbar = () => {
           <MdShoppingCart className="text-white text-xl" />
         </div>
       </nav>
-      <article className="hidden md:flex absolute -right-12 -top-12 w-52 h-52 bg-gradient-to-tr from-yellow-400 to-yellow-600 rounded-full *:m-0 *:text-white  flex-col items-center pt-24 font-light rotate-45">
+      <article className="hidden md:flex absolute -right-12 -top-12 w-52 h-52 bg-gradient-to-tr from-yellow-400 to-yellow-600 rounded-full *:m-0 *:text-white  flex-col items-center pt-24 font-light rotate-45 shadow-lg shadow-neutral-700">
         <Text className="text-2xl">COMPRA A</Text>
         <Text className="text-4xl">CRÉDITO</Text>
       </article>
