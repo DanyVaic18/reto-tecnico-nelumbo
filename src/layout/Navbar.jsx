@@ -14,6 +14,9 @@ const Navbar = () => {
     setOpen(true);
   };
 
+  const handleCancel = () => {
+    setOpen(false);
+  };
   return (
     <header className="min-h-20 px-[4%] py-2 bg-blue-700 flex items-center">
       <nav className="flex items-center gap-3 lg:justify-between w-full sm:pr-[14%] lg:pr-[8%]">
@@ -45,12 +48,8 @@ const Navbar = () => {
         <Text className="text-2xl">COMPRA A</Text>
         <Text className="text-4xl">CRÉDITO</Text>
       </article>
-      <Modal
-        open={open}
-        title="Iniciar Sesión:"
-        footer={null}
-      >
-        <LoginForm closeModal={() => setOpen(false)}/>
+      <Modal open={open} title={null} footer={null} onCancel={handleCancel}>
+        <LoginForm closeModal={() => setOpen(false)} />
       </Modal>
     </header>
   );

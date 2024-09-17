@@ -1,8 +1,9 @@
-import { Button, Form, Input } from "antd";
-
+import { Button, Form, Input, Typography } from "antd";
+const { Title } = Typography;
 const LoginForm = (props = { closeModal: () => {} }) => {
   const onFinish = (values) => {
     alert(`Inició de Sesión: ` + JSON.stringify(values, null, 2));
+    // eslint-disable-next-line react/prop-types
     props?.closeModal();
   };
   const onFinishFailed = (errorInfo) => {
@@ -12,12 +13,7 @@ const LoginForm = (props = { closeModal: () => {} }) => {
   return (
     <Form
       name="basic"
-      labelCol={{
-        span: 8,
-      }}
-      wrapperCol={{
-        span: 16,
-      }}
+      layout="vertical"
       style={{
         maxWidth: 600,
       }}
@@ -28,6 +24,10 @@ const LoginForm = (props = { closeModal: () => {} }) => {
       onFinishFailed={onFinishFailed}
       autoComplete="off"
     >
+      <Title level={3} className="text-center">
+        Iniciar Sesión
+      </Title>
+
       <Form.Item
         label="Nombre del usuario"
         name="username"
@@ -54,16 +54,11 @@ const LoginForm = (props = { closeModal: () => {} }) => {
         <Input.Password />
       </Form.Item>
 
-      <Form.Item
-        wrapperCol={{
-          offset: 8,
-          span: 16,
-        }}
-      >
-        <Button type="primary" htmlType="submit">
-          Submit
-        </Button>
-      </Form.Item>
+      <div className="w-full flex justify-center">
+          <Button type="primary" htmlType="submit" className="bg-yellow-400 text-blue-700 border-0 hover:bg-yellow-500 transition min-w-[120px]">
+            Enviar
+          </Button>
+      </div>
     </Form>
   );
 };
