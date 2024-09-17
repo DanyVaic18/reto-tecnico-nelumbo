@@ -1,5 +1,22 @@
 import { create } from "zustand";
 
+import samsungGalaxys21 from "../assets/productos/smartphone/samsung-galaxy-s21.png"
+import samsungGalaxyNote20Ultra from "../assets/productos/smartphone/samsung-galaxy-note-20-ultra.jpg"
+import samsungGalaxya52 from "../assets/productos/smartphone/samsung-galaxy-a52.jpg"
+import samsungGalaxyzfold3 from "../assets/productos/smartphone/samsung-galaxy-z-fold-3.jpg"
+import samsungGalaxys20fe from "../assets/productos/smartphone/samsung-galaxy-s20-fe.jpg"
+import xiaomiMi11 from "../assets/productos/smartphone/xiaomi-mi-11.jpg"
+import iphone13pro from "../assets/productos/smartphone/iphone-13-pro.webp"
+import lenovoThinkpadX1Carbon from "../assets/productos/laptops/lenovo-thinkpad-x1-carbon.png"
+import lenovoIdeapad5 from "../assets/productos/laptops/lenovo-ideapad-5.webp"
+import lenovoLegion5 from "../assets/productos/laptops/lenovo-legion-5.png"
+import lenovoyogaslim7 from "../assets/productos/laptops/lenovo-yoga-slim-7.webp"
+import lenovothinkbook14 from "../assets/productos/laptops/lenovo-thinkbook-14.png"
+import asusZenbook14 from "../assets/productos/laptops/asus-zenbook-14.png"
+import aceraspire5 from "../assets/productos/laptops/acer-aspire-5.webp"
+
+
+
 export const useProductStore = create((set) => ({
   product: {
     id: 1,
@@ -28,7 +45,7 @@ export const useProductStore = create((set) => ({
       category: "Smartphone",
       mark: "Samsung",
       price: "800.00",
-      image: "../assets/productos/smartphone/samsung-galaxy-s21.png",
+      image: samsungGalaxys21,
       discount: "10%",
       reviews: 4.5,
       detailedInformation: {
@@ -47,7 +64,7 @@ export const useProductStore = create((set) => ({
       category: "Smartphone",
       mark: "Samsung",
       price: "1200.00",
-      image: "../assets/productos/smartphone/samsung-note-20-ultra.jpg",
+      image: samsungGalaxyNote20Ultra,
       discount: "15%",
       reviews: 4.8,
       detailedInformation: {
@@ -66,7 +83,7 @@ export const useProductStore = create((set) => ({
       category: "Smartphone",
       mark: "Samsung",
       price: "350.00",
-      image: "../assets/productos/smartphone/samsung-galaxy-a52.jpg",
+      image: samsungGalaxya52,
       discount: "5%",
       reviews: 4.3,
       detailedInformation: {
@@ -85,7 +102,7 @@ export const useProductStore = create((set) => ({
       category: "Smartphone",
       mark: "Samsung",
       price: "1799.00",
-      image: "../assets/productos/smartphone/samsung-galaxy-z-fold-3.jpg",
+      image: samsungGalaxyzfold3,
       discount: "12%",
       reviews: 4.7,
       detailedInformation: {
@@ -104,7 +121,7 @@ export const useProductStore = create((set) => ({
       category: "Smartphone",
       mark: "Samsung",
       price: "600.00",
-      image: "../assets/productos/smartphone/samsung-galaxy-s20-fe.jpg",
+      image: samsungGalaxys20fe,
       discount: "8%",
       reviews: 4.4,
       detailedInformation: {
@@ -124,7 +141,7 @@ export const useProductStore = create((set) => ({
       category: "Smartphone",
       mark: "Xiaomi",
       price: "700.00",
-      image: "../assets/productos/smartphone/xiaomi-mi-11.jpg",
+      image: xiaomiMi11,
       discount: "10%",
       reviews: 4.6,
       detailedInformation: {
@@ -143,7 +160,7 @@ export const useProductStore = create((set) => ({
       category: "Smartphone",
       mark: "Apple",
       price: "999.00",
-      image: "../assets/productos/smartphone/iphone-13-pro.webp",
+      image: iphone13pro,
       discount: "5%",
       reviews: 4.8,
       detailedInformation: {
@@ -162,7 +179,7 @@ export const useProductStore = create((set) => ({
       category: "Laptop",
       mark: "Lenovo",
       price: "1500.00",
-      image: "../assets/productos/laptops/lenovo-thinkpad-x1-carbon.png",
+      image: lenovoThinkpadX1Carbon,
       discount: "10%",
       reviews: 4.8,
       detailedInformation: {
@@ -182,7 +199,7 @@ export const useProductStore = create((set) => ({
       category: "Laptop",
       mark: "Lenovo",
       price: "750.00",
-      image: "../assets/productos/laptops/lenovo-ideapad-5.webp",
+      image: lenovoIdeapad5,
       discount: "5%",
       reviews: 4.5,
       detailedInformation: {
@@ -202,7 +219,7 @@ export const useProductStore = create((set) => ({
       category: "Laptop",
       mark: "Lenovo",
       price: "1200.00",
-      image: "../assets/productos/laptops/lenovo-legion-5.png",
+      image: lenovoLegion5,
       discount: "12%",
       reviews: 4.7,
       detailedInformation: {
@@ -222,7 +239,7 @@ export const useProductStore = create((set) => ({
       category: "Laptop",
       mark: "Lenovo",
       price: "1000.00",
-      image: "../assets/productos/laptops/lenovo-yoga-slim-7.webp",
+      image: lenovoyogaslim7,
       discount: "8%",
       reviews: 4.6,
       detailedInformation: {
@@ -242,7 +259,7 @@ export const useProductStore = create((set) => ({
       category: "Laptop",
       mark: "Lenovo",
       price: "850.00",
-      image: "../assets/productos/laptops/lenovo-thinkbook-14.png",
+      image: lenovothinkbook14,
       discount: "7%",
       reviews: 4.4,
       detailedInformation: {
@@ -262,7 +279,7 @@ export const useProductStore = create((set) => ({
       category: "Laptop",
       mark: "ASUS",
       price: "950.00",
-      image: "../assets/productos/laptops/asus-zenbook-14.png",
+      image: asusZenbook14,
       discount: "10%",
       reviews: 4.7,
       detailedInformation: {
@@ -282,7 +299,7 @@ export const useProductStore = create((set) => ({
       category: "Laptop",
       mark: "Acer",
       price: "600.00",
-      image: "../assets/productos/laptops/acer-aspire-5.webp",
+      image: aceraspire5,
       discount: "8%",
       reviews: 4.5,
       detailedInformation: {
@@ -297,5 +314,4 @@ export const useProductStore = create((set) => ({
       },
     },
   ],
-  
 }));

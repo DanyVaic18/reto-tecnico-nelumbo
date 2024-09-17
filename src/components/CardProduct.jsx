@@ -4,7 +4,6 @@ import { BsHeart } from "react-icons/bs";
 const { Title, Text } = Typography;
 
 const CardProduct = (product) => {
-  console.log(product);
   return (
     <div className="flex flex-col shadow-lg rounded-2xl border w-[90%]">
       <div className="p-4 w-full px-8 relative">
@@ -12,7 +11,7 @@ const CardProduct = (product) => {
         <img
           src={product.image}
           alt={product.name}
-          className="h-[420px] w-full border rounded-md object-cover"
+          className="h-[420px] w-full rounded-md object-contain"
         />
       </div>
       <div className="grid grid-cols-2 gap-1 p-4">
