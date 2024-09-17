@@ -1,4 +1,3 @@
-import React from "react";
 import logoMacroPaySvg from "../assets/nabvar/logo-macro-pay.svg";
 
 const LogoMacroPay = () => {
