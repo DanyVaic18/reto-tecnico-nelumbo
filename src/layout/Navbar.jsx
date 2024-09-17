@@ -1,20 +1,28 @@
-import { Button, Typography } from "antd";
+import { Button, Modal, Typography } from "antd";
 import logoMacroPay from "../assets/nabvar/logo-macro-pay.svg";
 import { MdShoppingCart } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import LoginForm from "../components/LoginForm";
 
 const { Text } = Typography;
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
+  const showModal = () => {
+    setOpen(true);
+  };
+
   return (
     <header className="min-h-20 px-[4%] py-2 bg-blue-700 flex items-center">
       <nav className="flex items-center gap-3 lg:justify-between w-full sm:pr-[14%] lg:pr-[8%]">
         <Link to={"/"}>
-            <img
-              src={logoMacroPay}
-              alt="logo"
-              className="w-full max-w-[120px] sm:max-w-[200px] pt-3"
-            />
+          <img
+            src={logoMacroPay}
+            alt="logo"
+            className="w-full max-w-[120px] sm:max-w-[200px] pt-3"
+          />
         </Link>
         <div className="flex gap-2 items-center">
           <Button
@@ -26,6 +34,7 @@ const Navbar = () => {
           <Button
             size="large"
             className="bg-blue-700 border-blue-700 text-yellow-400 hover:border hover:border-yellow-400 transition"
+            onClick={showModal}
           >
             Iniciar Sesión
           </Button>
@@ -36,6 +45,13 @@ const Navbar = () => {
         <Text className="text-2xl">COMPRA A</Text>
         <Text className="text-4xl">CRÉDITO</Text>
       </article>
+      <Modal
+        open={open}
+        title="Iniciar Sesión:"
+        footer={null}
+      >
+        <LoginForm closeModal={() => setOpen(false)}/>
+      </Modal>
     </header>
   );
 };
