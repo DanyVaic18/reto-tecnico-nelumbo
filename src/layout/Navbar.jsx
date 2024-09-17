@@ -26,13 +26,13 @@ const Navbar = () => {
         <div className="flex gap-2 items-center sm:pr-[8%] 2xl:pr-0">
           <Button
             size="large"
-            className="bg-yellow-400 text-blue-700 border-0 hover:bg-yellow-500 transition"
+            className="bg-yellow-400 text-blue-700 border-0 hover:bg-yellow-500 transition font-medium"
           >
             Crea Tu Cuenta
           </Button>
           <Button
             size="large"
-            className="bg-blue-700 border-blue-700 text-yellow-400 hover:border hover:border-yellow-400 transition"
+            className="bg-blue-700 border-blue-700 text-yellow-400 hover:border hover:border-yellow-400 transition font-medium"
             onClick={showModal}
           >
             Iniciar Sesión
