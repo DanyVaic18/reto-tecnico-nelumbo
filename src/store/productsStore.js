@@ -6,7 +6,7 @@ export const useProductStore = create((set) => ({
     name: "",
     category: "",
     mark: "",
-    price: "2.000",
+    price: "",
     image: "",
     discount: "",
     reviews: "",
@@ -28,7 +28,7 @@ export const useProductStore = create((set) => ({
       category: "Smartphone",
       mark: "Samsung",
       price: "800.00",
-      image: "https://example.com/images/samsung-galaxy-s21.jpg",
+      image: "../assets/productos/smartphone/samsung-galaxy-s21.png",
       discount: "10%",
       reviews: "4.5",
       detailedInformation: {
@@ -47,7 +47,7 @@ export const useProductStore = create((set) => ({
       category: "Smartphone",
       mark: "Samsung",
       price: "1200.00",
-      image: "https://example.com/images/samsung-note-20-ultra.jpg",
+      image: "../assets/productos/smartphone/samsung-note-20-ultra.jpg",
       discount: "15%",
       reviews: "4.8",
       detailedInformation: {
@@ -66,7 +66,7 @@ export const useProductStore = create((set) => ({
       category: "Smartphone",
       mark: "Samsung",
       price: "350.00",
-      image: "https://example.com/images/samsung-galaxy-a52.jpg",
+      image: "../assets/productos/smartphone/samsung-galaxy-a52.jpg",
       discount: "5%",
       reviews: "4.3",
       detailedInformation: {
@@ -85,7 +85,7 @@ export const useProductStore = create((set) => ({
       category: "Smartphone",
       mark: "Samsung",
       price: "1799.00",
-      image: "https://example.com/images/samsung-galaxy-z-fold-3.jpg",
+      image: "../assets/productos/smartphone/samsung-galaxy-z-fold-3.jpg",
       discount: "12%",
       reviews: "4.7",
       detailedInformation: {
@@ -104,7 +104,7 @@ export const useProductStore = create((set) => ({
       category: "Smartphone",
       mark: "Samsung",
       price: "600.00",
-      image: "https://example.com/images/samsung-galaxy-s20-fe.jpg",
+      image: "../assets/productos/smartphone/samsung-galaxy-s20-fe.jpg",
       discount: "8%",
       reviews: "4.4",
       detailedInformation: {
@@ -117,6 +117,101 @@ export const useProductStore = create((set) => ({
         characteristics: "120Hz Display, Triple Camera, 5G",
       },
     },
+    {
+        "id": 6,
+        "name": "Lenovo ThinkPad X1 Carbon",
+        "category": "Laptop",
+        "mark": "Lenovo",
+        "price": "1500.00",
+        "image": "../assets/productos/laptops/lenovo-thinkpad-x1-carbon.png",
+        "discount": "10%",
+        "reviews": "4.8",
+        "detailedInformation": {
+          "manufacturer": "Lenovo",
+          "productWeight": "1.13kg",
+          "dimensions": "323 x 217 x 14.9 mm",
+          "countryOrigin": "China",
+          "color": "Black",
+          "material": "Carbon Fiber",
+          "characteristics": "Intel Core i7, 16GB RAM, 512GB SSD, 14-inch FHD Display"
+        }
+      },
+      {
+        "id": 7,
+        "name": "Lenovo IdeaPad 5",
+        "category": "Laptop",
+        "mark": "Lenovo",
+        "price": "750.00",
+        "image": "../assets/productos/laptops/lenovo-ideapad-5.webp",
+        "discount": "5%",
+        "reviews": "4.5",
+        "detailedInformation": {
+          "manufacturer": "Lenovo",
+          "productWeight": "1.66kg",
+          "dimensions": "356 x 233 x 19.9 mm",
+          "countryOrigin": "China",
+          "color": "Platinum Grey",
+          "material": "Aluminum",
+          "characteristics": "AMD Ryzen 5, 8GB RAM, 256GB SSD, 15.6-inch FHD Display"
+        }
+      },
+      {
+        "id": 8,
+        "name": "Lenovo Legion 5",
+        "category": "Laptop",
+        "mark": "Lenovo",
+        "price": "1200.00",
+        "image": "../assets/productos/laptops/lenovo-legion-5.png",
+        "discount": "12%",
+        "reviews": "4.7",
+        "detailedInformation": {
+          "manufacturer": "Lenovo",
+          "productWeight": "2.3kg",
+          "dimensions": "363 x 260 x 23.5 mm",
+          "countryOrigin": "China",
+          "color": "Phantom Black",
+          "material": "Plastic and Aluminum",
+          "characteristics": "Intel Core i7, 16GB RAM, 1TB SSD, 15.6-inch 144Hz Display, NVIDIA RTX 3060"
+        }
+      },
+      {
+        "id": 9,
+        "name": "Lenovo Yoga Slim 7",
+        "category": "Laptop",
+        "mark": "Lenovo",
+        "price": "1000.00",
+        "image": "../assets/productos/laptops/lenovo-yoga-slim-7.webp",
+        "discount": "8%",
+        "reviews": "4.6",
+        "detailedInformation": {
+          "manufacturer": "Lenovo",
+          "productWeight": "1.4kg",
+          "dimensions": "320.6 x 208.18 x 14.9 mm",
+          "countryOrigin": "China",
+          "color": "Slate Grey",
+          "material": "Aluminum",
+          "characteristics": "AMD Ryzen 7, 16GB RAM, 512GB SSD, 14-inch FHD Display"
+        }
+      },
+      {
+        "id": 10,
+        "name": "Lenovo ThinkBook 14",
+        "category": "Laptop",
+        "mark": "Lenovo",
+        "price": "850.00",
+        "image": "../assets/productos/laptops/lenovo-thinkbook-14.png",
+        "discount": "7%",
+        "reviews": "4.4",
+        "detailedInformation": {
+          "manufacturer": "Lenovo",
+          "productWeight": "1.5kg",
+          "dimensions": "323 x 218 x 17.9 mm",
+          "countryOrigin": "China",
+          "color": "Mineral Grey",
+          "material": "Aluminum",
+          "characteristics": "Intel Core i5, 8GB RAM, 512GB SSD, 14-inch FHD Display"
+        }
+      }
   ],
 
   removeAllBears: () => set({ bears: 0 }),
