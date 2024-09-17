@@ -1,8 +1,42 @@
-# React + Vite
+# Technical Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Create a demo product catalog featuring various categories, where users can preview product details in a pop-up window and also visit dedicated product pages to explore more comprehensive information
 
-Currently, two official plugins are available:
+## Init Proyect
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- npm install
+- npm run dev
+
+## Deploy
+
+- npm run deploy
+
+## Views
+
+- Must have a menu
+
+### First Product List
+
+- Filter section
+  - Add Brand, Price, Reviews filters
+
+### Second Modal information
+
+- By clicking on the I Want It button, the modal will appear with the information of the
+product.
+
+### Third
+
+- Product Detail
+- Product Photo
+- Detailed Product Information
+- Related Products
+- Section to Request Credits
+- Page Footer
+
+### Considerations
+
+- A minimum of 4 products per category must be displayed as test data in the product listing.
+- Images can be sourced from the internet and do not need to be exact replicas of the mock.
+- You can use different icons that represent the same thing or images for the iconography.
+- Product details can be accessed by clicking on the product name or the image.
